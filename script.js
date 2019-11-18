@@ -87,4 +87,18 @@ for (let i = 0; i < cards.length; i++) {
 });
 };
 
-//FONCTION 7 - 
+//FONCTION 7 - Rolling the last card in the first place
+var row = document.getElementsByClassName('row')[1];
+
+function rollingCard () {
+	row.insertBefore(cards[cards.length - 1], cards[0]);
+}
+
+document.getElementsByClassName('my-2')[1].addEventListener('click', rollingCard);
+
+//FONCTION 8 - Rolling the first card in the last place
+
+
+
+
+//FONCTION 9 - Function "pas piquée des hannetons"

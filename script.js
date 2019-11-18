@@ -63,4 +63,28 @@ function bootstrapDelete () {
 
 navbar.addEventListener('dblclick', bootstrapDelete)
 
-//FONCTION 6 - 
+//FONCTION 6 - Card style change
+
+var allCardText = document.getElementsByClassName('card-text');
+var allCardImg = document.getElementsByClassName('card-img-top');
+var cards = document.getElementsByClassName('col-md-4');
+var viewBtn = document.getElementsByClassName('btn-success');
+
+for (let i = 0; i < cards.length; i++) {
+	viewBtn[i].addEventListener('mouseover', function(){
+	if (allCardImg[i].style.width === '100%') {
+		allCardImg[i].style.width = '20%';
+	}
+	else {
+		allCardImg[i].style.width = '100%';
+	}
+	if (allCardText[i].style.display === 'block') {
+		allCardText[i].style.display = 'none';
+	}
+	else {
+		allCardText[i].style.display = 'block';
+	}
+});
+};
+
+//FONCTION 7 - 
